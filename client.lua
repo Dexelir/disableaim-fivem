@@ -17,7 +17,7 @@ Citizen.CreateThread(function()
 			DisableControlAction(0,25,true) -- Disable right click
 			DisableControlAction(1,25,true) -- Disable right click
 		else -- if not false it should be true 
-			DisableControlAction(1,25,false) -- Enable right click since player is in a plane or a heli
+			DisableControlAction(0,25,false) -- Enable right click since player is in a plane or a heli
 			DisableControlAction(1,25,false) -- Enable right click since player is in a plane or a heli
 		end
 	end
