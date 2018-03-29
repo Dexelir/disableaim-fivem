@@ -1,13 +1,5 @@
 -- Made by Dexelir for RyanxyzMc, have fun mate!
 
-function GetPedVehicleSeat(ped) -- Snippet from previous projects because i am lazy AF
-    local vehicle = GetVehiclePedIsIn(ped, false)
-    for i=-2,GetVehicleMaxNumberOfPassengers(vehicle) do
-        if(GetPedInVehicleSeat(vehicle, i) == ped) then return i end
-    end
-    return -2
-end
-
 Citizen.CreateThread(function()
 	local playerInAirVeh = false 
 	while true do
